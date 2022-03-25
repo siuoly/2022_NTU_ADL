@@ -1,0 +1,48 @@
+Traceback (most recent call last):
+  File "/home/siuoly/.local/lib/python3.10/site-packages/numpy/core/getlimits.py", line 516, in __init__
+    self.dtype = numeric.dtype(int_type)
+TypeError: 'NoneType' object is not callable
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/siuoly/.local/lib/python3.10/site-packages/pudb/__init__.py", line 148, in runscript
+    dbg._runscript(mainpyfile)
+  File "/home/siuoly/.local/lib/python3.10/site-packages/pudb/debugger.py", line 514, in _runscript
+    self.run(statement)
+  File "/usr/lib/python3.10/bdb.py", line 597, in run
+    exec(cmd, globals, locals)
+  File "<string>", line 1, in <module>
+  File "slot.py", line 237, in <module>
+    from seqeval.metrics import accuracy_score, classification_report, f1_score
+  File "/home/siuoly/.local/lib/python3.10/site-packages/seqeval/metrics/__init__.py", line 1, in <module>
+    from seqeval.metrics.sequence_labeling import (accuracy_score,
+  File "/home/siuoly/.local/lib/python3.10/site-packages/seqeval/metrics/sequence_labeling.py", line 14, in <module>
+    from seqeval.metrics.v1 import SCORES, _precision_recall_fscore_support
+  File "/home/siuoly/.local/lib/python3.10/site-packages/seqeval/metrics/v1.py", line 5, in <module>
+    from sklearn.exceptions import UndefinedMetricWarning
+  File "/home/siuoly/.local/lib/python3.10/site-packages/sklearn/__init__.py", line 82, in <module>
+    from .base import clone
+  File "/home/siuoly/.local/lib/python3.10/site-packages/sklearn/base.py", line 17, in <module>
+    from .utils import _IS_32BIT
+  File "/home/siuoly/.local/lib/python3.10/site-packages/sklearn/utils/__init__.py", line 28, in <module>
+    from .fixes import np_version, parse_version
+  File "/home/siuoly/.local/lib/python3.10/site-packages/sklearn/utils/fixes.py", line 20, in <module>
+    import scipy.stats
+  File "/home/siuoly/.local/lib/python3.10/site-packages/scipy/stats/__init__.py", line 453, in <module>
+    from ._stats_py import *
+  File "/home/siuoly/.local/lib/python3.10/site-packages/scipy/stats/_stats_py.py", line 38, in <module>
+    from scipy.spatial.distance import cdist
+  File "/home/siuoly/.local/lib/python3.10/site-packages/scipy/spatial/__init__.py", line 107, in <module>
+    from ._procrustes import procrustes
+  File "/home/siuoly/.local/lib/python3.10/site-packages/scipy/spatial/_procrustes.py", line 9, in <module>
+    from scipy.linalg import orthogonal_procrustes
+  File "/home/siuoly/.local/lib/python3.10/site-packages/scipy/linalg/__init__.py", line 198, in <module>
+    from ._misc import *
+  File "/home/siuoly/.local/lib/python3.10/site-packages/scipy/linalg/_misc.py", line 4, in <module>
+    from .lapack import get_lapack_funcs
+  File "/home/siuoly/.local/lib/python3.10/site-packages/scipy/linalg/lapack.py", line 990, in <module>
+    _int32_max = _np.iinfo(_np.int32).max
+  File "/home/siuoly/.local/lib/python3.10/site-packages/numpy/core/getlimits.py", line 518, in __init__
+    self.dtype = numeric.dtype(type(int_type))
+TypeError: 'NoneType' object is not callable

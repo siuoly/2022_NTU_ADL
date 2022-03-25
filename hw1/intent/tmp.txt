@@ -1,0 +1,7 @@
+data = {'text': 'i need you to book me a flight from ft lauderdale to houston on 
+southwest', 'intent': 'book_flight', 'id': 'train-0'}
+data=[3062,99,5557,2674,5139,1966,1028,5177,4724,1056,6044,2674,2243,5000,2027,]
+label = 23
+
+data = 
+padding_data:  data=[3062,99,5557,2674,5139,0,0,....0], len(data) = 128
